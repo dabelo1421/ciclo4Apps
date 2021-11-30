@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sesion1.reto11.ui.inicio.InicioFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.sesion1.reto11.ui.home.HomeFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_servicios"
+        android:name="com.sesion1.reto11.ui.gallery.GalleryFragment"
+        android:label="@string/menu_menu_servicios"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_sucursales"
+        android:name="com.sesion1.reto11.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_sucursales"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
